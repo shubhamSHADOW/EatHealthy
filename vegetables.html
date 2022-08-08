@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eat Healthy</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <h4 class="text-success">Eat Healthy</h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html">Fruits</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/vegetables.html">Vegetables</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="mx-3">
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+          <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+      </div> 
+      </div>
+    </div>
+  </nav>
+  <img src="/images/vegetables131.jpg" class="img-fluid" alt="Vegetables">
+
+  <!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="LoginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUpModal -->
+<div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="SignUpModalLabel">SignUp</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+                <div class="col-auto">
+                  <span id="passwordHelpInline" class="form-text">
+                    Must be 8-20 characters long.
+                  </span>
+                </div>                
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Retype Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <div class="col-auto">
+                      <span id="passwordHelpInline" class="form-text">
+                        Must be 8-20 characters long.
+                      </span>
+                    </div>                    
+                </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <div class="album py-5 bg-dark" style="border-top-style: solid;border-top-width: 20px;">
+    <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/asparagus1.jpeg" alt="Asparagus" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Asparagus</h4>
+              <p class="card-text">These vegetable spears are packed with nutrients, providing a good source of fiber,
+                vitamin C and folate. It is also an excellent source of vitamin K, an essential nutrient for blood
+                clotting and healthy bones. Notably, asparagus also contains chromium, a trace mineral that may enhance
+                the ability of insulin to transport glucose from the bloodstream into cells.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/beans1.jpg" alt="Bean" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Bean</h4>
+              <p class="card-text">Green beans are a good source of dietary fibre, niacin and vitamin C, a source of
+                folate, riboflavin, vitamin A, and vitamin B6 and contain a dietary significant amount of potassium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/beetroot1.jpg" alt="Beetroot" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Beetroot</h4>
+              <p class="card-text">Beetroot is a good source of vitamin B6, a source of dietary fibre, folate, niacin,
+                thiamin and vitamin C and contains a dietary significant amount of potassium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/chinese-chard1.jpg" alt="Chinese chard" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Chinese chard or Bok choy</h4>
+              <p class="card-text">Bok choy is a good source of folate and vitamin K, a source of vitamin A, vitamin B6
+                and vitamin C, and contains a dietary significant amount of potassium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/Broccoli1.jpg" alt="Broccoli" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Broccoli</h4>
+              <p class="card-text">Broccoli is a good source of vitamin C, and one serving [1 cup] easily provides an
+                adult's vitamin C requirements for a day. It is also a source of dietary fibre, folate, niacin,
+                riboflavin, vitamin A, vitamin B6, and contains a dietary significant amount of potassium.
+                Phytonutrients, including glucosinolates, phenolic compounds and carotenoids, are abundant in broccoli.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/brussel-sprouts1.jpg" alt="Brussels sprouts"
+              class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Brussels sprouts</h4>
+              <p class="card-text">Brussels sprouts are a good source of dietary fibre, vitamin C and vitamin K, and a
+                source of folate, thiamin, riboflavin, vitamin B6, and contain a dietary significant amount of
+                potassium. They are members of the brassica family and contain phytonutrients, including glucosinolates,
+                carotenoids and phenolic compounds.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/cabbage1.jpg" alt="Cabbage" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Cabbage</h4>
+              <p class="card-text">Cabbages (white/green) are a good source of vitamin C, a source of vitamin K, and
+                contain a dietary significant amount of potassium. Red cabbage is a good source of vitamin C, a source
+                of dietary fibre, vitamin A, vitamin B6, and contains potassium. There are differences between
+                varieties; for example, red cabbage is much higher in vitamin C and B6 compared to green.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/capsicum1.jpg" alt="Capsicum" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Capsicum</h4>
+              <p class="card-text">All capsicums are a good source of vitamin C and a source of vitamin B6.
+                Red/yellow/orange capsicums are a source of folate. Red capsicums contain higher levels of vitamin C
+                compared to the other colours and both red and orange capsicums are a source of vitamin A. A range of
+                carotenoids are responsible for the different colours.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/carrot1.jpg" alt="Carrot" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Carrot</h4>
+              <p class="card-text">Carrots are a good source of vitamin A, from carotenoids, in particular
+                beta-carotene, which is converted to vitamin A by the body. One medium carrot supplies more than the
+                recommended dietary intake for a day. Carrots are also a source of dietary fibre, folate and vitamin B6
+                and contain a dietary significant amount of potassium. The main phytonutrients in carrots are the
+                carotenoids and falcarinol which are being studied for their protection against some cancers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/cauliflower1.jpg" alt="Cauliflower" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Cauliflower</h4>
+              <p class="card-text">Cauliflower is a good source of vitamin C, a source of dietary fibre, folate and
+                vitamin B6, and contains a dietary significant amount of potassium. One serving of cauliflower (1 cup
+                raw) contains 120% of an adult’s daily requirement for vitamin C. As a member of the Brassica family of
+                vegetables it contains phytonutrients such as glucosinolates, carotenoids and phenolic compounds.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/celeriac1.jpg" alt="Celeriac" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Celeriac</h4>
+              <p class="card-text">Celeriac is a good source of vitamin K and a source of dietary fibre and vitamin C
+                plus contains a dietary significant amount of potassium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/celery1.jpg" alt="Celery" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Celery</h4>
+              <p class="card-text">Celery is a good source of vitamin K and contains potassium at a level of dietary
+                significance. Carotenoids and flavonoids are the predominant phytonutrients in celery.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/chinese-broccoli1.jpg" alt="Chinese broccoli"
+              class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Chinese broccoli or Gai lan</h4>
+              <p class="card-text">Gai Lan is an excellent source of vitamins A and C, calcium, and folate. It also
+                contains some antioxidants such as beta-carotene and lutein, and vitamins K and B9.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/chinese-cabbage1.jpg" alt="Chinese cabbage"
+              class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Chinese cabbage or Wong bok</h4>
+              <p class="card-text">Wong bok is a good source of folate, vitamin A and vitamin K, a source of vitamin B6,
+                vitamin C, calcium and iron, and contains a dietary significant amount of potassium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/corn1.jpg" alt="Corn or Sweet Corn" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Corn or Sweet Corn</h4>
+              <p class="card-text">Sweet corn is a good source of carbohydrate and contains a range of nutrients,
+                especially B group vitamins. It is a good source of dietary fibre, folate and niacin; a source of
+                riboflavin, thiamin, vitamin B6, vitamin C, magnesium, phosphorus and zinc, and contains a dietary
+                significant amount of potassium. Phytonutrients include carotenoids, lutein and zeaxanthin, which are of
+                particular interest due to their association with eye health. Phenolic compounds, namely phenolic acids,
+                are also present.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/Cucumber1.jpg" alt="Cucumber" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Cucumber</h4>
+              <p class="card-text">Lebanese cucumbers provide almost twice the amount of vitamin C and vitamin A
+                compared to other varieties. Peeling cucumbers reduces the dietary fibre content slightly. Cucumbers
+                have a high water content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/eggplant1.jpg" alt="Eggplant, aubergine or brinjal"
+              class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Eggplant, aubergine or brinjal</h4>
+              <p class="card-text">Eggplant is a source of dietary fibre. It also contains phytonutrients, particularly
+                the phenolic compounds such as anthocyanins and phenolic acids.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/Fennel1.jpeg" alt="Fennel" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Fennel</h4>
+              <p class="card-text">Fennel is a source of dietary fibre, folate and vitamin C, and contains a dietary
+                significant amount of potassium. Fennel contains only low levels of phenolic compounds.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/lettuce1.jpg" alt="Lettuce" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Lettuce</h4>
+              <p class="card-text">While lettuce contains mainly water (95%) this is an advantage in that it provides
+                hydration and is a low energy food. Lettuce is a source of folate and vitamin C. Some of the newer
+                varieties such as red oak and butter crunch are more strongly coloured than the traditional varieties
+                (iceberg), and the pigments (phytonutrients) that give them the colour have a range of potential health
+                benefits. Most lettuce contains the pigments beta-carotene and lutein while the red coloured lettuces
+                get their colour from anthocyanins.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/Mushroom1.jpg" alt="Mushroom" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Mushroom</h4>
+              <p class="card-text">Mushrooms are a good source of biotin and pantothenic acid, a source of dietary
+                fibre, niacin, riboflavin, vitamin B6, copper, phosphorus and selenium, and contain a dietary
+                significant amount of potassium. Portobello mushrooms are a good source of niacin, pantothenic acid,
+                riboflavin and selenium; a source of vitamin B6, copper and phosphorus and contains potassium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/onion1.jpg" alt="Onion" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Onion</h4>
+              <p class="card-text">Onions are not rich in the common nutrients but are low in energy. However, onions
+                are rich in phytonutrients – flavonoids, fructans, saponins and sulphur containing compounds. The red
+                varieties are a source of the flavonoids, anthocyanins.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/parsnip1.jpg" alt="Parsnip" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Parsnip</h4>
+              <p class="card-text">Parsnips are a good source of dietary fibre and vitamin K, a source of niacin,
+                pantothenic acid and vitamin C, and contains potassium at levels of dietary significance. While not rich
+                in phytonutrients, parsnips do contain falcarinol (also found in carrots), which may be protective
+                against some cancers.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/Pea1.jpg" alt="Peas" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Peas</h4>
+              <p class="card-text">Peas are a particularly useful all-round food and are an excellent source of dietary
+                fibre, a good source of folate, niacin, thiamin and vitamin C, a source of riboflavin, vitamin A,
+                vitamin B6, copper, iron, magnesium and phosphorus and contain potassium at levels of dietary
+                significance. In addition they are one of the best vegetable sources of protein. The major
+                phytonutrients in peas are the carotenoids, phenolic compounds, including some flavonoids as well as
+                phenolic acids.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/potatoes1.jpg" alt="Potato" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Potato</h4>
+              <p class="card-text">Potatoes are a good source of vitamin C, a source of dietary fibre, folate, niacin,
+                pantothenic acid, thiamin and magnesium, and contain potassium. The coloured skin and flesh varieties
+                contain higher levels of phytonutrients. These include phenolic acids (many present in the skin),
+                carotenoids and anthocyanins (red skinned varieties).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/pumpkin1.jpg" alt="Pumpkin" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Pumpkin</h4>
+              <p class="card-text">Pumpkins are a good source of vitamin A and vitamin C, containing high levels of the
+                carotenoids (alpha-carotene, beta-carotene and beta-cryptoxanthin) which the body converts to vitamin A
+                (some more than others). The stronger the colour of the flesh, the more carotenoids the pumpkin will
+                contain. They are a source of folate, pantothenic acid and vitamin E, and contain potassium at levels of
+                dietary significance.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/radish1.jpg" alt="Radish" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Radish</h4>
+              <p class="card-text">Radishes, like many salad vegetables, have a high water content and are therefore not
+                nutrient dense. They are not consumed in high enough amounts to make a significant contribution
+                nutritionally with the exception of vitamin C which they are a good source of. The main phytonutrients
+                in radishes are the glucosinolates (also found in broccoli and cabbage) and anthocyanins in the red skin
+                varieties.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/spinach1.jpg" alt="Spinach" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Spinach</h4>
+              <p class="card-text">Spinach deserves its reputation as a health enhancing vegetable, being a good source
+                of both nutrients and phytonutrients. It is a good source of folate, vitamin K, vitamin A (in the form
+                of beta-carotene), a source of iron, magnesium, and contains a dietary significant amount of potassium.
+                It is also low in energy (kilojoules). The phytonutrients of most importance are the carotenoids
+                (beta-carotene, lutein and zeaxanthin), flavonoids and other phenolic compounds. It should be noted that
+                spinach contains oxalic acid which can decrease the body’s absorption of calcium and iron from spinach.
+                Cooking can reduce the effect of oxalic acid.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/squash1.jpg" alt="Squash" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Squash</h4>
+              <p class="card-text">Squash is a good source of folate, vitamin A and vitamin C, a source of dietary
+                fibre, folate, vitamin E and pantothenic acid, and contains a dietary significant amount of potassium.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/swede1.jpg" alt="Swede" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Swede</h4>
+              <p class="card-text">Swedes are a good source of vitamin C, a source of dietary fibre, niacin, thiamin and
+                vitamin B6 and contain a dietary significant amount of potassium. Swedes are members of the Brassica
+                family and contain similar phytonutrients, particularly the glucosinolates and phytosterols.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/sweet potato1.jpg" alt="Sweet potato" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Sweet potato</h4>
+              <p class="card-text">Sweet potatoes are nutritious, high in fiber, very filling, and delicious. They can
+                be eaten boiled, baked, steamed, or fried.It’s rich in an antioxidant called beta carotene, which is
+                very effective at raising blood levels of vitamin A, particularly in children(1,2,3,4).</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/Tomatoe1.jpg" alt="Tomato" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Tomato</h4>
+              <p class="card-text">Tomatoes are a good source of vitamin C and a source of vitamin A (from
+                beta-carotene) and contain a dietary significant amount of potassium. Tomatoes contain many different
+                phytonutrients; the most well-known being the carotenoid lycopene, responsible for the red colour. It is
+                of interest as it is found in few other foods and is being studied for a range of potential health
+                benefits. Other carotenoids, particularly beta-carotene, are also found together with phenolic acids and
+                flavonoids.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/turnip1.jpg" alt="Turnip" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Turnip</h4>
+              <p class="card-text">Turnips are a good source of vitamin C, a source of dietary fibre, folate, niacin and calcium. Turnips are a member of the Brassica family therefore the phytonutrients phytosterols and glucosinolates are present.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/zucchini1.jpg" alt="Zucchini or courgette"
+              class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Zucchini or courgette</h4>
+              <p class="card-text">Courgettes are a good source of vitamin C and a source of folate, niacin, vitamin E and riboflavin and contain a dietary significant amount of potassium.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/chilli1.jpg" alt="Chilli peppers" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Chilli peppers</h4>
+              <p class="card-text">Chilli peppers are a good source of vitamin C and contain a raft of other vitamins and minerals. However, for most people chilli peppers are eaten only in small quantities so are more important for flavour than nutritional value.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/garlic1.jpg" alt="Garlic" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Garlic</h4>
+              <p class="card-text">For most people garlic is eaten only in small quantities. Garlic contributes to the flavour of many dishes rather than making a nutritional contribution.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/ginger1.jpg" alt="Ginger" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Ginger</h4>
+              <p class="card-text">For most people ginger is eaten only in small quantities so may be considered more important for its flavour than nutritional value.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/leek1.jpg" alt="Leek" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Leek</h4>
+              <p class="card-text">Leeks are a good source of folate, a source of dietary fibre, thiamin, vitamin B6, vitamin C, and contain a dietary significant amount of potassium. They contain phytonutrients, including carotenoids and phenolic compounds.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/okra1.jpg" alt="Okra" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Okra</h4>
+              <p class="card-text">Okra is a good source of dietary fibre, vitamin C and folate, a source of niacin, magnesium and manganese, and and contains a dietary significant amount of potassium. Phytonutrients, phenolics, carotenoids and flavonoids are found in okra.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/spring-onions1.jpg" alt="Spring onio" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Spring onion</h4>
+              <p class="card-text">Spring onions are a source of folate. Flavonoids, carotenoids and some sulphur compounds are the phytonutrients found in spring onions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/turmeric1.jpg" alt="Turmeric" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Turmeric</h4>
+              <p class="card-text">For most people fresh turmeric is eaten in small quantities, so is considered more for its flavour and natural colour than nutritional value. Turmeric is used in traditional Asian remedies, however more scientific evidence is required to support its use.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/Choko1.jpg" alt="Chokos" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Chokos</h4>
+              <p class="card-text">Chokos are a good source of vitamin C, and a source of folate, pantothenic acid and vitamin E.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/herbs1.jpg" alt="Fresh Herbs" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Fresh Herbs</h4>
+              <p class="card-text">Fresh herbs contain beta-carotene, vitamin C and some minerals such as iron, calcium and zinc.  An example is parsley, which is rich in nutrients such as vitamin A (from selected carotenoids) and C, potassium, folate, iron and calcium. Herbs have been shown to contain high levels of phytonutrients including carotenoids and phenolic compounds.  Seasoning meals/dishes with a generous amount of herbs to enhance flavour and increase the consumption of healthy foods is a useful way to promote health and reduce reliance on salt.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm h-100 bg-dark">
+            <img src="/images/Kale1.jpg" alt="Kale" class="bd-placeholder-img card-img-top img-fluid"
+              preserveAspectRatio="xMidYMid slice" focusable="false">
+
+            <div class="card-body text-bg-dark">
+              <h4>Kale</h4>
+              <p class="card-text">Kale is one of the most nutritionally dense vegetables. It is a good source of folate, vitamin A (from beta-carotene) and vitamin C, a source of dietary fibre, niacin, vitamin B6, calcium and manganese, and contains a dietary significant amount of potassium. In addition it contains an array of phytonutrients including flavonoids, carotenoids and glucosinolates. Red Kale is a good source of folate, vitamin C, vitamin K and calcium, a source of dietary fibre, vitamin A and magnesium.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-light">© 2022 Eat Healthy, Inc</span>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

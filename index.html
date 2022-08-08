@@ -1,0 +1,905 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eat Healthy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body  class="bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <h4 class="text-success">Eat Healthy</h4>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Fruits</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/vegetables.html">Vegetables</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <div class="mx-3">
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#LoginModal">Login</button>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#SignUpModal">SignUp</button>
+                </div>            
+            </div>
+        </div>
+    </nav>
+    <img src="/images/fruits21.jpg" class="img-fluid" alt="Fruits">
+
+    <!-- Login Modal -->
+<div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="LoginModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- SignUpModal -->
+  <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="SignUpModalLabel">SignUp</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <div class="col-auto">
+                    <span id="passwordHelpInline" class="form-text">
+                      Must be 8-20 characters long.
+                    </span>
+                  </div>                
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Retype Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <div class="col-auto">
+                        <span id="passwordHelpInline" class="form-text">
+                          Must be 8-20 characters long.
+                        </span>
+                      </div>                    
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="album py-5 bg-dark" style="border-top-style: solid;border-top-width: 20px;">
+        <div class="container">
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark">
+                        <img src="/images/apple.jpg" alt="Apples" class="bd-placeholder-img card-img-top img-fluid"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Apple</h4>
+                            <p class="card-text">Apples come in hundreds of color and flavor varieties. This versatile
+                                fruit can be enjoyed as a snack, mashed into sauce or even cooked into desserts. Even
+                                though the old adage “an apple a day keeps the doctor away” is not a scientific fact,
+                                these fleshy fruits have plenty of health benefits.</p>
+                            <ul>
+                                <li>Excellent source of soluble fiber.</li>
+                                <li>High in vitamin C.</li>
+                                <li>Great low-calorie snack.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Apricot2.jpg" alt="Apricot"
+                            class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Apricot</h4>
+                            <p class="card-text">These small fleshy fruits are closely related to peaches and plums. The
+                                skin of an apricot is typically yellow and orange with a splash of red, while the fruit
+                                on the inside ranges from yellow to orange. Apricots can be enjoyed fresh or in their
+                                dried form.</p>
+                            <ul>
+                                <li>Notable source of dietary fiber.</li>
+                                <li>Outstanding source of vitamin A and vitamin C.</li>
+                                <li>Provides calcium for healthy bones.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/avocado2.jpg" alt="Avocado"
+                            class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Avocado</h4>
+                            <p class="card-text">These nutrient dense fruits can be consumed by themselves, smashed into guacamole or even used in chocolate
+                                desserts. It’s easy to see why people love them — avocados are packed with nutrients!
+                            </p>
+                            <ul>
+                                <li>Contains high amounts of healthy fats.</li>
+                                <li>Good source of fiber.</li>
+                                <li>Rich in protein and potassium.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/banana2.jpg" alt="Banana"
+                            class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Banana</h4>
+                            <p class="card-text">The banana is one of the most popular fruits in the world despite the
+                                limited climates that it can grow in. These sweet tropical fruits are often used in
+                                desserts, blended into smoothies and enjoyed alone.</p>
+                            <ul>
+                                <li>Excellent source of potassium.</li>
+                                <li>Provides necessary minerals like manganese.</li>
+                                <li>Rich in vitamin B6 and vitamin C.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/blackberry1.jpg" alt="Blackberry"
+                            class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Blackberry</h4>
+                            <p class="card-text">These small dark druplets are enjoyed alone, in desserts or in compotes
+                                placed atop steaks or other red meats. Blackberries grow all over the world in the wild
+                                so next time you are on a hike, look out for these tasty snacks!</p>
+                            <ul>
+                                <li>Packed with vitamin C, vitamin K and vitamin E.</li>
+                                <li>Great source of magnesium and manganese.</li>
+                                <li>Very good source of dietary fiber.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/blueberry2.jpg" alt="Blueberry"
+                            class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Blueberry</h4>
+                            <p class="card-text">Blueberries are small dark blue or purple berries that have low sugar
+                                content despite tasting so sweet. These tasty little fruits are often baked into
+                                desserts, added to breakfasts or enjoyed alone. Often labeled a superfood, blueberries
+                                are a great addition to your diet because of their numerous health benefits.</p>
+                            <ul>
+                                <li>Rich in vitamin K and vitamin C.</li>
+                                <li>Outstanding source of manganese.</li>
+                                <li>High in antioxidants, particularly flavonoids.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/boysenberry1.jpg" alt="Boysenberry"
+                            class="bd-placeholder-img card-img-top img-fluid" preserveAspectRatio="xMidYMid slice"
+                            focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Boysenberry</h4>
+                            <p class="card-text">Boysenberries are hybrid fruits that are a cross between a blackberry
+                                and a raspberry. These druplets have the juiciness of a blackberry and the sweetness of
+                                a raspberry. It’s the best of both worlds! Though they are delicious to eat raw, they
+                                are also terrific in desserts, jams and tarts.</p>
+                            <ul>
+                                <li>High in dietary fiber.</li>
+                                <li>Rich in minerals such as manganese, iron, calcium and potassium.</li>
+                                <li>Exceptional source of vitamin K.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Cantaloupe1.jpg" alt="Cantaloupe"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Cantaloupe</h4>
+                            <p class="card-text">Cantaloupes are the perfect summer snack. Often served cold, these
+                                juicy fruits will cool you down in no time and their high water content will help
+                                prevent dehydration.</p>
+                            <ul>
+                                <li>Provide over 100% of the recommended daily amount of vitamin A.</li>
+                                <li>Marvelous source of vitamin C.</li>
+                                <li>Contains an abundance of antioxidants including choline, zeaxanthin and
+                                    beta-carotene.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/cherry1.jpg" alt="Cherry"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Cherry</h4>
+                            <p class="card-text">Though often associated with berries, these sweet red fruits are
+                                classified as drupes. Fresh cherries can be cooked with red meats, used as a garnish for
+                                desserts and of course, eaten as a fresh snack. These low-calorie fruits are packed with
+                                nutrients.</p>
+                            <ul>
+                                <li>Excellent source of vitamin A and vitamin C.</li>
+                                <li>Potassium-rich food.</li>
+                                <li>Low on the glycemic index, making them better for blood sugar.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/clementine1.jpg" alt="Clementine"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Clementine</h4>
+                            <p class="card-text">Clementines are hybrid fruits that were crossed between sweet and
+                                mandarin oranges. Like tangerines, these sweet fruits have thin skin, making them easy
+                                to peel and separate. Apart from being delicious and easy to eat, clementines also have
+                                a wide range of health benefits.</p>
+                            <ul>
+                                <li>Exceptional source of vitamin C and vitamin B9.</li>
+                                <li>Rich in minerals such as calcium, magnesium and potassium.</li>
+                                <li>Balance electrolytes due to the presence of potassium.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/cranberry1.jpg" alt="Cranberry"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Cranberry</h4>
+                            <p class="card-text">In the United States, these bright red berries are often added to
+                                Thanksgiving and Christmas meals. Fresh cranberries are quite tart in flavor so they are
+                                often dried or used in jams and juices with added sugar. This superfood is also packed
+                                with antioxidants and other nutrients.</p>
+                            <ul>
+                                <li>High in vitamin C, vitamin A and vitamin K.</li>
+                                <li>Contain B vitamins, thiamin, riboflavin, niacin and vitamin B6.</li>
+                                <li>Good source of fiber.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Dates1.jpg" alt="Date"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Date</h4>
+                            <p class="card-text">This Middle Eastern fruit, also known as a date, is one of the sweetest
+                                fruits in the world. These sugary treats are enjoyed fresh or dried. In western
+                                countries, dates are more often consumed in their dried form.</p>
+                            <ul>
+                                <li>Rich in minerals such as potassium, magnesium and copper.</li>
+                                <li>Great way to increase your fiber intake, which benefits digestion and blood sugar
+                                    control.</li>
+                                <li>High amount of fructose, making it an excellent natural sweetener.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Dragonfruit1.jpg" alt="Dragonfruit"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Dragonfruit</h4>
+                            <p class="card-text">This vibrant fruit is known for its red skin and white pulp. This
+                                unique fruit can be enjoyed with salads, yogurt or as a standalone snack. Dragonfruit
+                                has been called a superfood due to its nutrient content.</p>
+                            <ul>
+                                <li>Excellent source of dietary fiber.</li>
+                                <li>Rich in iron and magnesium.</li>
+                                <li>Contains prebiotic that are beneficial for gut health.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/durian1.jpg" alt="Durian"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Durian</h4>
+                            <p class="card-text">These large spiky fruits are infamous for their putrid scent. Though
+                                the smell is unbearable for some, the taste is loved by many. This sweet and creamy
+                                fruit is often cooked into a variety of sweet and savory Southeast Asian dishes. The
+                                durian boasts:</p>
+                            <ul>
+                                <li>Outstanding source of minerals such as copper and iron.</li>
+                                <li>High in vitamin C and vitamin B6.</li>
+                                <li>Rich in fiber and protein.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Elderberry1.jpg" alt="Elderberry"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Elderberry</h4>
+                            <p class="card-text">Elderberries have been traditionally used as a medicine to treat a host
+                                of ailments. Today, we use them as health supplements and for jams, syrups and teas. Due
+                                to the bitter flavor, these tiny blue-black berries need to be cooked before eating.</p>
+                            <ul>
+                                <li>Great source of vitamin C.</li>
+                                <li>Rich in minerals like iron.</li>
+                                <li>A good source of dietary fiber.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/fig1.jpg" alt="Fig"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Fig</h4>
+                            <p class="card-text">These Mediterranean fruits are delicate and are often dried for
+                                preservation. Figs are a great addition to pies, salads and soft cheeses. Their sweet
+                                flavor and chewy texture make this fruit truly unique.</p>
+                            <ul>
+                                <li>Rich in minerals including calcium, magnesium and iron.</li>
+                                <li>Contain vitamins A and K.</li>
+                                <li>Good source of soluble fiber.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/gojiberries1.jpg" alt="Goji Berry"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Goji Berry</h4>
+                            <p class="card-text">Goji berries are small red berries that are often used in teas, blended
+                                into smoothies or eaten in their dried form. Traditionally used in Chinese medicine,
+                                this vitamin-rich fruit has become increasingly popular in the West.</p>
+                            <ul>
+                                <li>Great source of protein.</li>
+                                <li>Extremely high in Vitamin A and vitamin B2.</li>
+                                <li>Contain minerals such as copper, selenium and iron.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Gooseberry1.jpg" alt="Gooseberry"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Gooseberry</h4>
+                            <p class="card-text">Gooseberries are small green berries that are quite tart in flavor.
+                                They are commonly used in sauces and desserts. Fresh gooseberries are only available for
+                                a few weeks during the summer but people enjoy canned gooseberries year round.</p>
+                            <ul>
+                                <li>Provide half of the recommended daily amount of vitamin C.</li>
+                                <li>Good source of both soluble and insoluble fiber.</li>
+                                <li>High vitamin A content.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/grapes1.jpg" alt="Grape"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Grape</h4>
+                            <p class="card-text">Grapes are one of the most versatile fruits that people all over the
+                                world enjoy. They come in a variety of flavors and colors and are used in juice, jelly
+                                and wines, as well as eaten raw. These sweet snacks have high sugar content when fresh
+                                and low sugar content when fermented.</p>
+                            <ul>
+                                <li>High in vitamin C and vitamin K.</li>
+                                <li>Rich in copper and potassium.</li>
+                                <li>When fermented, contains low sugar.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Grapefruit1.jpg" alt="Grapefruit"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Grapefruit</h4>
+                            <p class="card-text">This sweet and sour fruit is a natural hybrid of an orange and a
+                                pomelo. Grapefruits come in a variety of colors and are often enjoyed by themselves or
+                                paired with fish. This nutrient-rich fruit is one of the healthiest types of fruit you
+                                can eat.</p>
+                            <ul>
+                                <li>Contains over 100% of the recommended daily amount of vitamin C.</li>
+                                <li>Good source of vitamin A.</li>
+                                <li>High in antioxidants, specifically flavonoids.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Guava1.jpg" alt="Guava"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Guava</h4>
+                            <p class="card-text">Guava is a less common green tropical fruit that, when cut open,
+                                reveals a white or pink pulp. Try eating guava by itself or dip it in vinegar!</p>
+                            <ul>
+                                <li>Contains over 200% of the daily recommended amount of vitamin C.</li>
+                                <li>Excellent source of dietary fiber.</li>
+                                <li>Low-calorie snack option.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/honeydew1.jpg" alt="Honeydew"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Honeydew</h4>
+                            <p class="card-text">Like the cantaloupe, honeydew is a sweet fruit that has a high water
+                                content. This fruit is eaten by itself or used in salads.</p>
+                            <ul>
+                                <li>Provides over half of the recommended daily amount of vitamin C.</li>
+                                <li>Outstanding source of vitamin B6.</li>
+                                <li>Contains an abundance of minerals including potassium and magnesium.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Kiwifruit1.jpg" alt="Kiwifruit"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Kiwifruit</h4>
+                            <p class="card-text">The kiwi is a sweet, green fruit filled with black seeds. This juicy
+                                fruit is surrounded in a furry skin and provide impressive nutritional content.
+                                Kiwifruit is often used in dessert items like tarts or eaten by itself.</p>
+                            <ul>
+                                <li>Over 200% of the recommended daily amount of vitamin C.</li>
+                                <li>Aids digestion due to high fiber and presence of enzymes.</li>
+                                <li>Contains vitamin K and vitamin E.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/kumquat1.jpg" alt="Kumquat"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Kumquat</h4>
+                            <p class="card-text">This tiny orange-like fruit can be eaten in one bite. The sweet inside
+                                paired with the sour rind gives kumquats a unique flavor that is enjoyed all over the
+                                world.</p>
+                            <ul>
+                                <li>Large amount of vitamin C.</li>
+                                <li>The seeds and the peel provide omega-3 fats.</li>
+                                <li>80% of their weight is water, making them very hydrating.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/lemon1.jpg" alt="Lemon"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Lemon</h4>
+                            <p class="card-text">This sour fruit is used in desserts, lemon drinks and thousands of
+                                recipes. Though squeezing lemon into water and recipes still has some health benefit,
+                                for the maximum benefits, you have to pucker up and eat the pulp!</p>
+                            <ul>
+                                <li>Rich in vitamin C.</li>
+                                <li>Healthy amounts of soluble fiber in the pulp.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/lime1.jpg" alt="Lime"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Lime</h4>
+                            <p class="card-text">Similar to the lemon, this green fruit is quite sour to the taste.
+                                Limes are often described as a little more bitter than lemons. These lip-puckering
+                                fruits are often used in cocktails and as a garnish on foods.</p>
+                            <ul>
+                                <li>Packed with vitamin C.</li>
+                                <li>Increases iron absorption.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/lychee1.jpg" alt="Lychee"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Lychee</h4>
+                            <p class="card-text">Lychee is a small tropical fruit that has a reddish purple outer skin
+                                and a soft, white, pulp. It’s eaten fresh and commonly mixed into ice cream and jelly.
+                            </p>
+                            <ul>
+                                <li>One serving contains over 100% of the recommended daily amount of vitamin C.</li>
+                                <li>Rich in copper and potassium.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/mango1.jpg" alt="Mango"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Mango</h4>
+                            <p class="card-text">This soft and tangy drupe is enjoyed raw and used in desserts like ice
+                                cream. Mangoes are super sweet, which makes them a perfect sugar replacement in
+                                smoothies.</p>
+                            <ul>
+                                <li>Great source of vitamins A and C.</li>
+                                <li>High in fiber.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/orange1.jpg" alt="Orange"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Orange</h4>
+                            <p class="card-text">Like grapefruits, oranges are hybrid fruits, stemmed from pomelos and
+                                mandarins. These citrus fruits are surrounded by a tough peel, encasing sweet and tart
+                                flavors inside. Oranges are used in a variety of ways but are most often enjoyed fresh.
+                            </p>
+                            <ul>
+                                <li>Contains over 100% of the recommended daily amount of vitamin C.</li>
+                                <li>Good source of vitamin B9 and potassium.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/papaya1.jpg" alt="Papaya"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Papaya</h4>
+                            <p class="card-text">The papaya is a large pear-shaped fruits filled with reddish-orange
+                                pulp and black seeds. This unique fruit can be enjoyed atop a serving of yogurt, chopped
+                                into salsa or blended into a smoothie with other types of fruit.</p>
+                            <ul>
+                                <li>Over 100% of the recommended daily amount of vitamin C.</li>
+                                <li>Good source of vitamin B9 and potassium.</li>
+                                <li>Over one third of the recommended daily amount of vitamin A.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/PassionFruit1.jpg" alt="Passion Fruit"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Passion Fruit</h4>
+                            <p class="card-text">Though this fruit can range from the size of a golf ball to a softball,
+                                it’s classified as a berry. The sweet insides of a passion fruit are often compared to
+                                tomatoes in texture. Try adding some to your next salad!</p>
+                            <ul>
+                                <li>Excellent source of fiber.</li>
+                                <li>Rich in potassium, phosphorus and magnesium.</li>
+                                <li>High in vitamin C and vitamin A.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Peach1.jpg" alt="Peach"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Peach</h4>
+                            <p class="card-text">This fuzzy fruit is the pride and joy of the South. Peaches are baked
+                                in desserts, served with ice cream and mixed into jams. If you don’t have access to
+                                fresh peaches, don’t worry! Canned unpeeled peaches have similar amounts of vitamins and
+                                minerals — just make sure there is no added sugar.</p>
+                            <ul>
+                                <li>Good source of vitamin C and A.</li>
+                                <li>Packed with antioxidants.</li>
+                                <li>Contains both soluble and insoluble fiber.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Pear1.jpg" alt="Pear"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Pear</h4>
+                            <p class="card-text">This sweet and crunchy snack comes in a variety of colors and shapes.
+                                Pears can be enjoyed fresh, cooked in cinnamon or baked into desserts. Though not
+                                particularly high in any specific nutrient, the pear boasts a range of micronutrients.
+                            </p>
+                            <ul>
+                                <li>Outstanding source of vitamin C and vitamin K.</li>
+                                <li>Contains copper, potassium and manganese.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Pineapple1.jpg" alt="Pineapple"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Pineapple</h4>
+                            <p class="card-text">The pineapple is covered in a thick, spiky skin. Inside the tough
+                                exterior, there is sweet, yellow fruit. This tropical treat is often grilled on skewers
+                                with meat and other types of fruit, enjoyed alone and added to desserts.</p>
+                            <ul>
+                                <li>Contains over 100% of the recommended daily amount of vitamin C.</li>
+                                <li>High in manganese.</li>
+                                <li>Excellent source of vitamin B1 and vitamin B6.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Plum1.jpg" alt="Plum"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Plum</h4>
+                            <p class="card-text">This sweet fruit has a dark purple skin that encases juicy insides that
+                                can range from yellow to red in color. Plums are quite bitter before they are ripe. To
+                                ensure you buy a ripe fruit, make sure to choose one that is heavy, slightly soft and
+                                has a sweet scent. This little fruit can be enjoyed fresh or in its dried form, known as
+                                a prune.</p>
+                            <ul>
+                                <li>Good source of vitamin B1, vitamin B2, vitamin B3 and vitamin B6.</li>
+                                <li>A low-calorie snack without any harmful fats.</li>
+                                <li>Packed with potassium, phosphorus and magnesium.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Pomegranate1.jpg" alt="Pomegranate"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Pomegranate</h4>
+                            <p class="card-text">Pomegranates are made up of a thick red skin and hundreds of red seeds
+                                inside. These bright red treats are used in desserts, juices and as garnishes.</p>
+                            <ul>
+                                <li>Excellent source of fiber.</li>
+                                <li>High in vitamin C, vitamin B6, and vitamin B2.</li>
+                                <li>Contains potassium and manganese.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Raspberry1.jpg" alt="Raspberry"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Raspberry</h4>
+                            <p class="card-text">These bright red druplets are the perfect mix of sweet and tangy.
+                                Raspberries are often used in syrups, desserts and eaten as a sweet snack.</p>
+                            <ul>
+                                <li>One cup contains over 50% of the recommended daily amount of vitamin C.</li>
+                                <li>Exceptional source of vitamin K and vitamin E.</li>
+                                <li>Rich in manganese, iron and potassium.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Starfruit1.jpg" alt="Star Fruit"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Star Fruit</h4>
+                            <p class="card-text">This special fruit lives up to its name. Cut a slice out of this small
+                                yellow fruit and it will be shaped like a perfect star. Star fruit has a tasty
+                                combination of sweet and sour and is low in calories. Try adding it to your salad or
+                                just slice and eat!</p>
+                            <ul>
+                                <li>One fruit contains over 50% of the recommended daily amount of vitamin C.</li>
+                                <li>Excellent source of copper.</li>
+                                <li>High in fiber.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Strawberries1.jpg" alt="Strawberry"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Strawberry</h4>
+                            <p class="card-text">These bright red fruits are a favorite for people all over the world.
+                                Strawberries are delicious when eaten fresh, added to desserts and used in jams or
+                                jellies.</p>
+                            <ul>
+                                <li>Excellent source of dietary fiber.</li>
+                                <li>Relatively low on the glycemic index, making them a good snack for blood sugar
+                                    control.</li>
+                                <li>High in vitamin C and vitamin B9.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/tangerine1.jpg" alt="Tangerine"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Tangerine</h4>
+                            <p class="card-text">Tangerines are smaller than oranges and have a noticeably sweeter and
+                                richer flavor. These fruits are also easier to peel, which is perfect for mid-day
+                                snacking.</p>
+                            <ul>
+                                <li>High in vitamin C, vitamin, B6, and vitamin A.</li>
+                                <li>Good source of potassium.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card shadow-sm h-100 bg-dark"> <img src="/images/Watermelon1.jpg" alt="Watermelon"
+                            class="bd-placeholder-img card-img-top" width="100%" height="auto"
+                            preserveAspectRatio="xMidYMid slice" focusable="false">
+
+                        <div class="card-body text-bg-dark">
+                            <h4>Watermelon</h4>
+                            <p class="card-text">A watermelon, as the name suggests, has an extremely high water
+                                content. This sweet fruit has a green rind and is filled with juicy red fruit. This
+                                low-calorie snack will keep you hydrated and happy on even the hottest day.</p>
+                            <ul>
+                                <li>High in vitamin C and vitamin A.</li>
+                                <li>Helps you stay hydrated.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-light">© 2022 Eat Healthy, Inc</span>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
